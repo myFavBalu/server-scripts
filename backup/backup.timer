@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer that starts the backup service every 15 minutes
+
+[Timer]
+OnCalendar=*:0/15
+Unit=backup.service
+
+[Install]
+WantedBy=multi-user.target

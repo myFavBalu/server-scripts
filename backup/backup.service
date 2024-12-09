@@ -1,0 +1,8 @@
+[Unit]
+Description=Minecraft World Backup Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/minecraft/scripts/backup.sh
+

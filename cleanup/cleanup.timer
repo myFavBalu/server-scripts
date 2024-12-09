@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer that starts the cleanup service every 24 hours
+
+[Timer]
+OnCalendar=*-*-* 00:00
+Unit=cleanup.service
+
+[Install]
+WantedBy=multi-user.target
